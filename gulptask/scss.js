@@ -5,7 +5,7 @@ const groupCSSmediaQuery = require("gulp-group-css-media-queries");
 
 const scss = () =>
   gulp
-    .src("./../scss/kocktail.scss")
+    .src("./node_modules/@kocktail/scss/kocktail.scss")
     .pipe(
       sass({
         outputStyle: "expanded",
