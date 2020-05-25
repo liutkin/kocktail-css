@@ -38,6 +38,6 @@
     "gulp-size": "^3.0.0"
   },
   "dependencies": {
-    "@kocktail/scss": "^1.1.4"
+    "@kocktail/scss": "^2.0.0"
   }
 }
