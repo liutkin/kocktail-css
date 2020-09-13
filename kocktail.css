@@ -1459,6 +1459,10 @@
   transform: scaleY(-1);
 }
 
+.no-outline {
+  outline: none;
+}
+
 @media screen and (min-width: 576px) {
   .block--sm {
     display: block;
