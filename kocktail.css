@@ -1444,11 +1444,13 @@
   fill: currentColor;
 }
 
-.fill-white {
+.fill-white,
+.fill-white path {
   fill: white;
 }
 
-.fill-black {
+.fill-black,
+.fill-black path {
   fill: black;
 }
 

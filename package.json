@@ -1,6 +1,6 @@
 {
   "name": "@kocktail/css",
-  "version": "3.3.1",
+  "version": "3.4.1",
   "description": "Functional CSS classes.",
   "main": "kocktail.css",
   "publishConfig": {
@@ -38,6 +38,6 @@
     "gulp-size": "^3.0.0"
   },
   "dependencies": {
-    "@kocktail/scss": "^3.3.1"
+    "@kocktail/scss": "^3.4.1"
   }
 }
