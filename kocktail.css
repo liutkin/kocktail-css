@@ -1439,7 +1439,8 @@
   float: right;
 }
 
-.fill-current-color {
+.fill-current-color,
+.fill-current-color path {
   fill: currentColor;
 }
 
