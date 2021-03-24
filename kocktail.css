@@ -1499,6 +1499,61 @@
   color: black;
 }
 
+.fill-current-color,
+.fill-current-color path {
+  fill: currentColor;
+}
+
+.fill-default,
+.fill-default path {
+  fill: var(--color-default);
+}
+
+.fill-primary,
+.fill-primary path {
+  fill: var(--color-primary);
+}
+
+.fill-accent,
+.fill-accent path {
+  fill: var(--color-accent);
+}
+
+.fill-alt,
+.fill-alt path {
+  fill: var(--color-alt);
+}
+
+.fill-gray,
+.fill-gray path {
+  fill: var(--color-gray);
+}
+
+.fill-red,
+.fill-red path {
+  fill: var(--color-red);
+}
+
+.fill-green,
+.fill-green path {
+  fill: var(--color-green);
+}
+
+.fill-blue,
+.fill-blue path {
+  fill: var(--color-blue);
+}
+
+.fill-white,
+.fill-white path {
+  fill: white;
+}
+
+.fill-black,
+.fill-black path {
+  fill: black;
+}
+
 .hover-trigger:hover .hover-content,
 .hover-trigger:focus .hover-content {
   display: block;
@@ -1545,21 +1600,6 @@
 
 .float-right {
   float: right;
-}
-
-.fill-current-color,
-.fill-current-color path {
-  fill: currentColor;
-}
-
-.fill-white,
-.fill-white path {
-  fill: white;
-}
-
-.fill-black,
-.fill-black path {
-  fill: black;
 }
 
 .flip-vertical {
