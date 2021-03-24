@@ -406,8 +406,8 @@
   max-width: 100%;
 }
 
-.max-half {
-  max-width: 50%;
+.width-half {
+  width: 50%;
 }
 
 .max-width-full-view {

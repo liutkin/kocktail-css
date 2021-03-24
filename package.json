@@ -1,6 +1,6 @@
 {
   "name": "@kocktail/css",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Functional CSS classes.",
   "main": "kocktail.css",
   "publishConfig": {
@@ -27,7 +27,7 @@
   "license": "MIT",
   "homepage": "https://github.com/liutkin/kocktail-css#readme",
   "devDependencies": {
-    "@kocktail/scss": "^4.1.0",
+    "@kocktail/scss": "^4.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "gulp": "^4.0.2",
