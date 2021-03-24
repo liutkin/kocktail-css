@@ -307,22 +307,6 @@
   overflow: auto;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .static {
   position: static;
 }
@@ -340,7 +324,6 @@
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -419,12 +402,12 @@
   z-index: 5;
 }
 
-.z-index-max {
-  z-index: 2147483647;
-}
-
 .max-width-full {
   max-width: 100%;
+}
+
+.max-half {
+  max-width: 50%;
 }
 
 .max-width-full-view {
@@ -1061,6 +1044,58 @@
   border-radius: 9999px;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-current {
+  border-color: currentColor;
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-gray {
+  border-color: var(--color-gray);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+.border-alt {
+  border-color: var(--color-alt);
+}
+
+.border-red {
+  border-color: var(--color-red);
+}
+
+.border-green {
+  border-color: var(--color-green);
+}
+
+.border-blue {
+  border-color: var(--color-blue);
+}
+
 .bg-center {
   background-position: center center;
 }
@@ -1197,9 +1232,7 @@
 }
 
 .trans-filter {
-  transition-property: -webkit-filter;
   transition-property: filter;
-  transition-property: filter, -webkit-filter;
 }
 
 .trans-border {
@@ -1322,6 +1355,10 @@
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .font-bold {
   font-weight: bold;
 }
@@ -1340,6 +1377,10 @@
 
 .font-serif {
   font-family: serif;
+}
+
+.font-mono {
+  font-family: monospace;
 }
 
 .text-center {
@@ -1364,10 +1405,6 @@
 
 .text-bottom {
   vertical-align: bottom;
-}
-
-.text-baseline {
-  vertical-align: baseline;
 }
 
 .text-nowrap {
@@ -1422,6 +1459,38 @@
   line-height: 0;
 }
 
+.color-default {
+  color: var(--color-default);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-accent {
+  color: var(--color-accent);
+}
+
+.color-alt {
+  color: var(--color-alt);
+}
+
+.color-gray {
+  color: var(--color-gray);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-green {
+  color: var(--color-green);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
 .color-white {
   color: white;
 }
@@ -1433,6 +1502,41 @@
 .hover-trigger:hover .hover-content,
 .hover-trigger:focus .hover-content {
   display: block;
+}
+
+.hover-highlight-1:hover,
+.hover-highlight-1:focus {
+  filter: brightness(1.05);
+}
+
+.hover-highlight-2:hover,
+.hover-highlight-2:focus {
+  filter: brightness(1.1);
+}
+
+.hover-highlight-3:hover,
+.hover-highlight-3:focus {
+  filter: brightness(1.15);
+}
+
+.hover-darken-1:hover,
+.hover-darken-1:focus {
+  filter: brightness(0.98);
+}
+
+.hover-darken-2:hover,
+.hover-darken-2:focus {
+  filter: brightness(0.95);
+}
+
+.hover-darken-3:hover,
+.hover-darken-3:focus {
+  filter: brightness(0.92);
+}
+
+.hover-shade:hover,
+.hover-shade:focus {
+  opacity: 0.75;
 }
 
 .float-left {
@@ -1468,6 +1572,10 @@
 
 .no-outline {
   outline: none;
+}
+
+.letter-wide {
+  letter-spacing: 0.05rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -1780,22 +1888,6 @@
     overflow: auto;
   }
 
-  .overflow-x-auto--sm {
-    overflow-x: auto;
-  }
-
-  .overflow-y-auto--sm {
-    overflow-y: auto;
-  }
-
-  .overflow-x-hidden--sm {
-    overflow-x: hidden;
-  }
-
-  .overflow-y-hidden--sm {
-    overflow-y: hidden;
-  }
-
   .static--sm {
     position: static;
   }
@@ -1813,7 +1905,6 @@
   }
 
   .sticky--sm {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -1835,6 +1926,10 @@
 
   .width-full--sm {
     width: 100%;
+  }
+
+  .width-half--sm {
+    width: 50%;
   }
 
   .width-auto--sm {
@@ -2582,22 +2677,6 @@
     overflow: auto;
   }
 
-  .overflow-x-auto--md {
-    overflow-x: auto;
-  }
-
-  .overflow-y-auto--md {
-    overflow-y: auto;
-  }
-
-  .overflow-x-hidden--md {
-    overflow-x: hidden;
-  }
-
-  .overflow-y-hidden--md {
-    overflow-y: hidden;
-  }
-
   .static--md {
     position: static;
   }
@@ -2615,7 +2694,6 @@
   }
 
   .sticky--md {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -2637,6 +2715,10 @@
 
   .width-full--md {
     width: 100%;
+  }
+
+  .width-half--md {
+    width: 50%;
   }
 
   .width-auto--md {
@@ -3384,22 +3466,6 @@
     overflow: auto;
   }
 
-  .overflow-x-auto--lg {
-    overflow-x: auto;
-  }
-
-  .overflow-y-auto--lg {
-    overflow-y: auto;
-  }
-
-  .overflow-x-hidden--lg {
-    overflow-x: hidden;
-  }
-
-  .overflow-y-hidden--lg {
-    overflow-y: hidden;
-  }
-
   .static--lg {
     position: static;
   }
@@ -3417,7 +3483,6 @@
   }
 
   .sticky--lg {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -3439,6 +3504,10 @@
 
   .width-full--lg {
     width: 100%;
+  }
+
+  .width-half--lg {
+    width: 50%;
   }
 
   .width-auto--lg {
@@ -4186,22 +4255,6 @@
     overflow: auto;
   }
 
-  .overflow-x-auto--xl {
-    overflow-x: auto;
-  }
-
-  .overflow-y-auto--xl {
-    overflow-y: auto;
-  }
-
-  .overflow-x-hidden--xl {
-    overflow-x: hidden;
-  }
-
-  .overflow-y-hidden--xl {
-    overflow-y: hidden;
-  }
-
   .static--xl {
     position: static;
   }
@@ -4219,7 +4272,6 @@
   }
 
   .sticky--xl {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -4241,6 +4293,10 @@
 
   .width-full--xl {
     width: 100%;
+  }
+
+  .width-half--xl {
+    width: 50%;
   }
 
   .width-auto--xl {
@@ -4988,22 +5044,6 @@
     overflow: auto;
   }
 
-  .overflow-x-auto--xxl {
-    overflow-x: auto;
-  }
-
-  .overflow-y-auto--xxl {
-    overflow-y: auto;
-  }
-
-  .overflow-x-hidden--xxl {
-    overflow-x: hidden;
-  }
-
-  .overflow-y-hidden--xxl {
-    overflow-y: hidden;
-  }
-
   .static--xxl {
     position: static;
   }
@@ -5021,7 +5061,6 @@
   }
 
   .sticky--xxl {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -5043,6 +5082,10 @@
 
   .width-full--xxl {
     width: 100%;
+  }
+
+  .width-half--xxl {
+    width: 50%;
   }
 
   .width-auto--xxl {
